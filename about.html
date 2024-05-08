@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>About Eli Strum</title>
+    <script src="https://kit.fontawesome.com/0e0dabf9d9.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.co.png">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+        <header>
+            <section id="toplinks">
+                <nav class="nav-menu"> 
+                    <div class="container">
+                        <div class="navtoggle" id="myNavtoggle">
+                        <a href="/">
+                            <img src="/img/logo-slice.svg" alt="logo" class="logo">
+                        </a>     
+                        <ul>
+                            <li><a href="index.html">Work</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+            </section>
+        </header>
+
+    <main>
+        <section id="profile" class="container">
+            <h1>My Process</h1>
+            <picture>
+                <source srcset="/img/profile@1x.png" media="(max-width:767px)">
+                <img src="/img/profile@2x.png" alt="Profile Image">
+            </picture>
+            <h2>My Story</h2>
+            <p>
+                As a UX designer with a passion for crafting intuitive interfaces, I strive to create engaging digital solutions that delight users and drive results. With a background in Fine Arts, I bring a deep understanding of User Interface Aesthetics to my design process, ensuring that every interaction is meaningful and user-centric.
+            </p>
+            <div class="skills-tools-wrapper">
+                <div class="col-md-6">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>User Research</li>
+                        <li>Wireframing</li>
+                        <li>Prototyping</li>
+                        <li>UI Design</li>
+                        <li>Interaction Design</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h2>Tools</h2>
+                    <ul>    
+                        <li>Figma</li>
+                        <li>Sketch</li>
+                        <li>Adobe XD</li>
+                        <li>Illustrator</li>
+                    </ul>
+                </div>
+            </div>
+              <p>For a detailed overview of my experience and qualifications, please refer to my <a href="files/EStrum2024CV.pdf" target="_blank">CV</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <section id="footer">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>
+                    Do you like my work and want to discuss opportunities? 
+                </p>
+                <div>
+                    <a href="mailto:elistrdesign@gmail.com">Email me</a>
+                </div>
+                <ul class="social-icons">
+                    <li><a href="https://www.linkedin.com/in/eli-strum/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.behance.net/elizabethstrum" target="_blank"><i class="fab fa-behance"></i></a></li>
+                </ul>
+                <p>Copyright Elizabeth 2024</p>
+            </div> 
+        </section>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".navbar a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>
